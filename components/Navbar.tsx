@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const toggleMusic = () => {
     if (!audioRef.current) return;
