@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react"
 
-export default function (){
+export default function Oneko(){
     useEffect(() => {
         const script = document.createElement("script");
         script.src = "/oneko.js"; // path in /public
