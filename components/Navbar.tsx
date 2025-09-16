@@ -53,7 +53,7 @@ export default function Navbar() {
       
           <button
             onClick={toggleMusic}
-            className="p-2 rounded-full bg-gray-500 hover:bg-gray-400 transition cursor-pointer"
+            className="p-2 rounded-full bg-gray-400 hover:bg-gray-300 transition cursor-pointer"
           >
             {isPlaying ? <IconPlayerPause size={22} /> : <IconMusic size={22} />}
           </button>
