@@ -46,7 +46,7 @@ const skills = {
 
 export default function Skills() {
     return (
-        <section className="w-full py-10 flex flex-col bg-black items-center">
+        <section className="w-full py-6 flex flex-col bg-black items-center">
             {/* Shimmer Header */}
             <motion.h2
                 className="text-4xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-transparent bg-clip-text animate-pulse py-5"
