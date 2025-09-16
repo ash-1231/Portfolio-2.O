@@ -5,7 +5,7 @@ import { GradientText } from "./ui/GradientText";
 
 export default function Hero() {
     return (
-        <div className="h-screen w-full overflow-hidden z-100">
+        <div className="h-screen w-full overflow-hidden z-100 py-1">
             <Vortex
                 backgroundColor="black"
                 particleCount={700}
