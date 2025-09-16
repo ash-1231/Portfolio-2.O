@@ -6,7 +6,7 @@ export default function About() {
       <div className="w-full max-w-4xl">
         <ProjectCard
           title="About me"
-          description={`Hi, I am Ashutosh Aditya — a passionate Full-Stack Developer with a strong focus on building scalable, user-centric applications. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and enjoy blending functionality with clean design to craft impactful digital experiences.
+          description={`Hi, I am Ashutosh — a passionate Full-Stack Developer with a strong focus on building scalable, user-centric applications. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and enjoy blending functionality with clean design to craft impactful digital experiences.
 
 I’m currently exploring real-time technologies like WebRTC and WebSockets to build interactive, collaborative, and high-performance applications.
 
