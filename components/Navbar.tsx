@@ -34,7 +34,7 @@ export default function Navbar() {
         <h1 className="text-xl font-bold text-slate-600 dark:text-brown">Ashutosh</h1>
 
     
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 relative">
        
           <FloatingDock
             items={dockItems}
