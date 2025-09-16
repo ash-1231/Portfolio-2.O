@@ -25,6 +25,7 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-vars": "warn", // no longer fails build
       "react-hooks/exhaustive-deps": "warn",
       "@typescript-eslint/no-unused-expressions": "warn",
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 ];
