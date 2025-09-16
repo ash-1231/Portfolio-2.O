@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 
 const ProjectCard = ({ title, description, color }) => {
@@ -6,7 +6,7 @@ const ProjectCard = ({ title, description, color }) => {
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
-  const eWidth = 400;  // approximate size for border calc
+  const eWidth = 400; // approximate size for border calc
   const eHeight = 300;
 
   const handleMouseMove = (e) => {
@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, color }) => {
     setHoverPos({ x, y });
 
     // Tilt effect (centered)
-    const rotateX = ((y / height) - 0.5) * -35; 
+    const rotateX = ((y / height) - 0.5) * -35;
     const rotateY = ((x / width) - 0.5) * 35;
     setTilt({ rotateX, rotateY });
   };
@@ -52,7 +52,15 @@ const ProjectCard = ({ title, description, color }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative w-[60vw] h-[70vh] rounded-2xl transition-all duration-150 cursor-pointer"
+      className="
+        relative 
+        w-full sm:w-[80vw] md:w-[60vw] 
+        min-h-[50vh] md:h-[70vh] 
+        rounded-2xl 
+        transition-all duration-150 
+        cursor-pointer 
+        overflow-hidden
+      "
       style={{
         transform: `rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
         background: isHovering
@@ -62,9 +70,13 @@ const ProjectCard = ({ title, description, color }) => {
         transition: "transform 0.15s ease-out, border-color 0.2s ease",
       }}
     >
-      <div className="p-6">
-        <h2 className="text-white text-2xl font-bold mb-3">{title}</h2>
-        <p className="text-gray-300 text-lg whitespace-pre-line">{description}</p>
+      <div className="p-4 sm:p-6 max-h-full overflow-y-auto">
+        <h2 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3">
+          {title}
+        </h2>
+        <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed whitespace-pre-line break-words">
+          {description}
+        </p>
       </div>
     </div>
   );
